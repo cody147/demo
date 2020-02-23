@@ -1,4 +1,6 @@
-package id.cody.demo;
+package id.cody.server;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -10,8 +12,6 @@ import android.os.RemoteException;
 import android.util.Log;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.List;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
@@ -19,12 +19,9 @@ import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import id.cody.server.Book;
-import id.cody.server.BookController;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "AIDL Client2";
+    private static final String TAG = "AIDL Client1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
