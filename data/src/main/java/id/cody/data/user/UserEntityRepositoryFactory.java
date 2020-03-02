@@ -1,11 +1,11 @@
-package id.cody.data.User;
+package id.cody.data.user;
 
 import javax.inject.Inject;
 
 import id.cody.data.EntityRepositoryFactory;
 import id.cody.data.SourceType;
-import id.cody.data.User.mock.MockUserEntityRepository;
-import id.cody.data.User.network.NetworkUserEntityRepository;
+import id.cody.data.user.mock.MockUserEntityRepository;
+import id.cody.data.user.network.NetworkUserEntityRepository;
 
 public class UserEntityRepositoryFactory implements EntityRepositoryFactory<UserEntityRepository> {
 

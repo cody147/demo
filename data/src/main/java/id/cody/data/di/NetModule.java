@@ -1,8 +1,10 @@
 package id.cody.data.di;
 
+import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
-import id.cody.data.User.network.UserNetworkApi;
+import id.cody.data.user.network.UserNetworkApi;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
@@ -12,6 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetModule {
 
     @Provides
+    @Singleton
     OkHttpClient provideOkHttpClient(){
         return new OkHttpClient.Builder().build();
     }

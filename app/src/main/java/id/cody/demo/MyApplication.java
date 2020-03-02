@@ -13,7 +13,6 @@ public class MyApplication extends Application {
 
     static AppComponent appComponent;
 
-
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
@@ -33,6 +32,7 @@ public class MyApplication extends Application {
                 .build();
         appComponent.inject(this);
     }
+
 
     public static AppComponent provideAppComponent(){
         return appComponent;

@@ -1,4 +1,4 @@
-package id.cody.data.User.model;
+package id.cody.data.user.model;
 
 public class UserinfoEntity {
 }

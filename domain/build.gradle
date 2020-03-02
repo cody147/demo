@@ -22,10 +22,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    dataBinding{
+        enabled=true
+    }
+
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     rootProject.domainDependencies.each {
         add(it.configuration, it.dependency, it.options)
     }

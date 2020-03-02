@@ -1,12 +1,10 @@
-package id.cody.data.User.mock;
-
-import java.util.concurrent.Callable;
+package id.cody.data.user.mock;
 
 import javax.inject.Inject;
 
-import id.cody.data.User.UserEntityRepository;
-import id.cody.data.User.model.UserEntity;
-import id.cody.data.User.model.UserinfoEntity;
+import id.cody.data.user.UserEntityRepository;
+import id.cody.data.user.model.UserEntity;
+import id.cody.data.user.model.UserinfoEntity;
 import io.reactivex.rxjava3.core.Observable;
 
 public class MockUserEntityRepository implements UserEntityRepository {

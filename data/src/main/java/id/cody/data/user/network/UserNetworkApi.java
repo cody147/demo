@@ -1,6 +1,6 @@
-package id.cody.data.User.network;
+package id.cody.data.user.network;
 
-import id.cody.data.User.model.UserinfoEntity;
+import id.cody.data.user.model.UserinfoEntity;
 import io.reactivex.rxjava3.core.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

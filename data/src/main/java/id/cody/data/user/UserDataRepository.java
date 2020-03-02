@@ -1,10 +1,10 @@
-package id.cody.data.User;
+package id.cody.data.user;
 
 import javax.inject.Inject;
 
 import id.cody.data.SourceType;
-import id.cody.data.User.model.UserEntity;
-import id.cody.data.User.model.UserinfoEntity;
+import id.cody.data.user.model.UserEntity;
+import id.cody.data.user.model.UserinfoEntity;
 import id.cody.domain.UserRepository;
 import id.cody.domain.login.model.User;
 import id.cody.domain.login.model.UserInfo;
@@ -27,7 +27,10 @@ public class UserDataRepository implements UserRepository {
         return mockUserEntityRepository().login(entity).map(new Function<UserinfoEntity, UserInfo>() {
             @Override
             public UserInfo apply(UserinfoEntity userinfoEntity) throws Throwable {
-                return new UserInfo();
+                Thread.sleep(2*1000);
+                UserInfo userInfo=new UserInfo();
+                userInfo.age=10;
+                return userInfo;
             }
         });
     }

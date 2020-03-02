@@ -29,7 +29,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    rootProject.baseDependencies.each {
+        add(it.configuration, it.dependency, it.options)
+    }
+
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'

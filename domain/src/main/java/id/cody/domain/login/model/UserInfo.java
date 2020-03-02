@@ -1,8 +1,8 @@
 package id.cody.domain.login.model;
 
-public class UserInfo {
+public class UserInfo  {
 
 
-    private int age;
+    public int age;
 
 }

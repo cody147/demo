@@ -17,6 +17,8 @@ import java.io.IOException;
 
 import id.cody.demo.R;
 import id.cody.demo.ui.login.LoginActivity;
+import id.cody.demo.ui.me.MeActivity;
+import id.cody.demo.ui.register.RegisterActivity;
 import id.cody.domain.login.model.User;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -48,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
+
+        findViewById(R.id.register_btn).setOnClickListener((view)->startActivity(new Intent(this, RegisterActivity.class)));
+        findViewById(R.id.me_btn).setOnClickListener((view)->startActivity(new Intent(this, MeActivity.class)));
     }
 
     @Override

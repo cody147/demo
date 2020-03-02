@@ -2,7 +2,7 @@ package id.cody.data.di;
 
 import dagger.Module;
 import dagger.Provides;
-import id.cody.data.User.UserDataRepository;
+import id.cody.data.user.UserDataRepository;
 import id.cody.domain.UserRepository;
 
 @Module

@@ -1,8 +1,8 @@
-package id.cody.data.User;
+package id.cody.data.user;
 
 
-import id.cody.data.User.model.UserEntity;
-import id.cody.data.User.model.UserinfoEntity;
+import id.cody.data.user.model.UserEntity;
+import id.cody.data.user.model.UserinfoEntity;
 import io.reactivex.rxjava3.core.Observable;
 
 public interface UserEntityRepository {
